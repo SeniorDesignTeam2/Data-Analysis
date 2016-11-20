@@ -9,6 +9,6 @@ testIdxs = data[-dt,]
 
 attriEval=attrEval(PI.Delay.Cat~TRIAL.PHASE+NUMBER.OF.SITES+NUMBER.OF.COUNTRIES+NUMBER.OF.SUBJECTS+PROJECT.STATUS.CODE+PROJECT.FUNDING.CODE+RESPONSIBLE.UNIT.CODE
                    +PROJECT.TYPE.CODE+PROJECT.SUBTYPE.CODE+PROJECT.PHASE.CODE+DEVELOPMENT.CATEGORY.CODE+DISEASE.AREA.SUBCATEGORY.CODE+STRATEGIC.PRIORITY.CODE+IDP.PTRS
-                   +PRODUCT.TYPE.CODE+PRODUCT.TYPE.SUBCATEGORY.CODE+Dosage.Form.Description, data, estimator="GainRatio", costMatrix = NULL, outputNumericSplits=FALSE)
+                   +PRODUCT.TYPE.CODE+PRODUCT.TYPE.SUBCATEGORY.CODE+Dosage.Form.Description, data, estimator="InfGain", costMatrix = NULL, outputNumericSplits=FALSE)
 infoCore(what = "attrEval")
 print (attriEval)

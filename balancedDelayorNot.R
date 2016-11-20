@@ -1,3 +1,7 @@
+#predicive model sample code (only show delay or not)
+#similar process can be reproduce for delay category by using for loop, loop through the data source and target variable.
+
+
 library(randomForest)
 library(mlbench)
 library(caret)
@@ -17,7 +21,10 @@ colnames(balancedData)[34]="Delay.or.Not"
 
 dt = sort(sample(nrow(balancedData),nrow(balancedData)*0.8))
 train = balancedData[dt,]
-test = balancedData[-dt,]
+data <- read.csv("D:/Imputed_Full_Data_2.0.csv",header=TRUE)
+data = data[1:34]
+colnames(data)[34] = "Delay.or.Not"
+test = data[-dt,]
 # load the package
 library(CORElearn)
 cat(versionCore(),"\n")
@@ -41,4 +48,4 @@ require(ExplainPrediction)
 
 #not run this yet... take couple hours to generate a graph... dont think worth it.
 explainVis(modelRF, train, test, method="EXPLAIN",visLevel="model",
-           problemName="data", fileType="none", classValue=1, displayColor="color") 
+           problemName="data", fileType="none", classValue=1, displayColor="color")

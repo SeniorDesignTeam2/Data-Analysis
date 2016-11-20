@@ -1,3 +1,6 @@
+#use information gain method access importance of the feature
+#for loop needed for time horizone, but that will require more processing power. 
+
 # load the package
 library(CORElearn)
 cat(versionCore(),"\n")

@@ -1,3 +1,5 @@
+#randomTree nonspecified estimator method (Gini here), maxim bias... dont use
+
 library(randomForest)
 library(mlbench)
 library(caret)
@@ -24,3 +26,4 @@ tree = randomForest(Delay.or.Not~TRIAL.PHASE+NUMBER.OF.SITES+NUMBER.OF.COUNTRIES
                     +PRODUCT.TYPE.CODE+PRODUCT.TYPE.SUBCATEGORY.CODE+Dosage.Form.Description,ntree=2000,data=train)
 print(tree)
 importance(tree)
+

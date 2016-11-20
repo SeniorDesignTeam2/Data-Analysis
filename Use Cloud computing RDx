@@ -1,0 +1,2 @@
+1. Use RDx environment set up 20 core and maxmium memory to perform time horizon and delay category analysis.
+2. use language of your preference (pig, in my case) to create recursive iteration to perform time horizon and delay category analysis.

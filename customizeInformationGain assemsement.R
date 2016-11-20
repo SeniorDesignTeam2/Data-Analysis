@@ -1,3 +1,6 @@
+#customize estimator algorithm can be incorperate in the model for this sepcific dataset
+#achieve maxium accuracy, however might lack of reproducibility
+
 library(plyr)
 
 #compute Shannon entropy
